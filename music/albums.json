@@ -1,5 +1,5 @@
 [{
-    "title": "Instant Mixed",
+    "title": "[1]Instant Mixed",
     "artist": "Various Artists",
     "tracks": [{
         "title": "01 - I Need Your Love - Calvin Harris",
@@ -29,4 +29,38 @@
         "title": "07 - Dragonborn - Jeremy Soule",
         "url": "http://m1.file.xiami.com/193/62193/480376/1770651967_2850122_l.mp3"
     }]
-}]
+}
+{
+    "title": "[2]Rainy Day",
+    "artist": "Various Artists",
+    "tracks": [
+    {
+        "title": "01 - Whispers of Rain - Dan Gibson",
+        "url": "http://m1.file.xiami.com/74/24074/171658/2120042_707155_l.mp3"
+    },
+    {
+        "title": "02 - 風見鶏 - Depapepe",
+        "url": "http://m3.file.xiami.com/h/0zzPGNkevW5vgKmfTowJcicY4eDWGTOGx7RPjqgsvx0mI44Ia5z6k5GZRwhX2ySbqF8bFNKf3TxNGe0yd8f9iao"
+    },
+    {
+        "title": "03 - LOVIN' YOU - 押尾コータロー",
+        "url": "http://m1.file.xiami.com/148/24148/322660/3592336_2955136_l.mp3"
+    },
+    {
+        "title": "04 - 風の住む街 - 磯村由紀子",
+        "url": "http://m1.file.xiami.com/735/23735/169810/2096838_2721720_l.mp3"
+    },
+    {
+        "title": "05 - Until the Last Moment - Yanni",
+        "url": "http://m1.file.xiami.com/503/23503/168936/2085918_104948_l.mp3"
+    },
+    {
+        "title": "06 - Arrival of the Birds - The Cinematic Orchestra",
+        "url": "http://m1.file.xiami.com/1/604/22604/323457/3602579_419545_l.mp3"
+    },
+    {
+        "title": "07 - break - 宮本笑里",
+        "url": "http://m1.file.xiami.com/104/59104/367176/1769356633_1061677_l.mp3"
+    }]
+}
+]
