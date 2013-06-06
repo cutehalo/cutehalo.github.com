@@ -130,7 +130,7 @@ nav button.next:hover {
 	position: fixed;
     bottom: 0;
     background: rgba(55,55,55,0.7);
-    width: 100%;
+    width: 89%;
 }
 
 ::-webkit-scrollbar {
