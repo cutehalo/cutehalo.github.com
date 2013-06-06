@@ -8,23 +8,32 @@ body {
 }
 
 #container {
-  height: auto;
-  min-height: 100%;
-	position: relative;
+    height: auto;
+    min-height: 100%;
+
 }
 
 .albums {
     list-style: none;
     padding: 0 2%;
+    overflow: hidden;
 }
-
+.playlist .albums{
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0;
+}
+.playlist .album{
+    width: 100%;
+    padding: 1em 2em;
+}
 .album {
     list-style: none;
     display: inline-block;
     position: relative;
-    width: 80%;
     margin: 0;
-    padding: 1em 2em;
+    padding: 0em 2em;
+    float: left;
 }
 
 .track {
@@ -38,7 +47,7 @@ body {
 
 .album button.queue {
     position: absolute;
-    left: 0;
+    left: 5px;
     width: 16px;
     height: 16px;
     border: 0;
@@ -62,9 +71,10 @@ body {
 
 .playlist {
     position: absolute;
-    width: 30%;
-    padding: 0 3%;
-    min-height: 100%;
+    padding: 20px;
+    left: 30%;
+    right: 30%;
+    top: 20%;
 }
 
 nav {
@@ -117,8 +127,26 @@ nav button.next:hover {
 }
 
 .library {
-	margin-left: 36%;
-	padding: 0.1em 2%;
+	position: fixed;
+    bottom: 0;
+    background: rgba(55,55,55,0.7);
+    width: 100%;
 }
 
-/* vim:set sw=4:ts=4:expandtab */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    opacity: 0.8;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #eee;
+    -webkit-border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:horizontal, ::-webkit-scrollbar-thumb:vertical {
+    width: 5px;
+    background-color: #888;
+    -webkit-border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:horizontal:hover, ::-webkit-scrollbar-thumb:vertical:hover {
+    background-color: #777;
+}

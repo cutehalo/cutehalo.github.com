@@ -16,7 +16,6 @@
   <body ng-controller="TunesCtrl">
     <div id="container">
       <div class="playlist">
-        <h1>Playlist</h1>
         <nav>
           <button class="control play" ng-click="player.play()" ng-hide="player.playing">Play</button>
           <button class="control pause" ng-click="player.pause()" ng-show="player.playing">Pause</button>
@@ -38,7 +37,6 @@
         </ul>
       </div>
       <section class="library">
-        <h1>Music Library</h1>
         <ul class="albums">
           <li class="album current" ng-repeat="album in albums">
             <button class="queue add" ng-click="player.playlist.add(album)"></button>
