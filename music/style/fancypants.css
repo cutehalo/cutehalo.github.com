@@ -63,6 +63,7 @@ body {
 .playlist .album.current .tracks .current {
     background-color: rgba(56, 62, 63, 0.75);
     border-radius: 4px;
+    font-weight: bold;
 }
 
 .playlist .album .tracks li {

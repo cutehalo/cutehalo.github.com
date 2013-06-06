@@ -17,6 +17,7 @@ body {
     list-style: none;
     padding: 0 2%;
     overflow: hidden;
+    margin: 0;
 }
 .playlist .albums{
     max-height: 300px;
@@ -25,17 +26,16 @@ body {
 }
 .playlist .album{
     width: 89%;
-    padding: 1em 2em;
 }
 .album {
     list-style: none;
     display: inline-block;
     position: relative;
     margin: 0;
-    padding: 0em 2em;
+    padding: 1em 2em;
     float: left;
 }
-
+.albums .album:last-child{background: #CACACA;}
 .track {
   cursor: pointer;
 }
