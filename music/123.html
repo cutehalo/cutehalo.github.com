@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+</head>
+<body>
+<canvas id="myCanvas"> Your browser is not support Canvas </canvas>
+
+<script type="text/javascript">
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var img = new Image();
+img.src="http://www.google.com.hk/images/nav_logo129.png";
+canvas.width = 500;
+canvas.height = 500;
+img.onload = function(){ctx.drawImage(img,0,0);}
+</script>
+</body>
+</html>
