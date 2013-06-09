@@ -127,7 +127,7 @@ nav button.next:hover {
 }
 
 .library {
-	position: fixed;
+    position: fixed;
     bottom: 0;
     background: rgba(55,55,55,0.7);
     width: 100%;
