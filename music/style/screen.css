@@ -36,6 +36,10 @@ body {
     padding: 1em 2em;
     float: left;
 }
+<<<<<<< HEAD
+=======
+.library .albums .album:last-child{background: #CACACA;}
+>>>>>>> 54f565dc7c94e4d46a0657c89f86a98a5f0fc010
 .track {
   cursor: pointer;
 }
