@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style/fancypants.css" media="screen, projection">
 
     <script src="js/vendor/angular.js"></script>
-    <!-- <script src="js/vendor/angular-mocks.js"></script> -->
     <script src="js/Tunes.js"></script>
   </head>
 
@@ -47,4 +46,19 @@
       </section>
     </div>
   </body>
+<script>
+window.onload=(function () {
+  var hour = new Date().getHours();
+  var obj = document.getElementsByTagName("body")[0];
+  if (hour<8) {
+    obj.setAttribute("style","background:url(http://interfacelift.com/wallpaper/D47cd523/03255_lonerock_1280x1024.jpg);")
+  }
+  else if (hour<16&&hour>=8){
+    obj.setAttribute("style","background:url(http://interfacelift.com/wallpaper/D47cd523/02555_cherryblossoms_1280x1024.jpg);")
+  }
+  else{
+    obj.setAttribute("style","background:url(http://interfacelift.com/wallpaper/D47cd523/02376_themilkywaygalaxy_1280x1024.jpg);")
+  }
+})();
+</script>
 </html>
