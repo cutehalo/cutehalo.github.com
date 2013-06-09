@@ -37,8 +37,8 @@
       </div>
       <section class="library">
         <ul class="albums">
-          <li class="album current" ng-repeat="album in albums">
-            <button class="queue add" ng-click="player.playlist.add(album)"></button>
+          <li class="album current" ng-repeat="album in albums" ng-click="player.playlist.add(album)">
+            <button class="queue add"></button>
             <span class="album-title">{{album.title}}</span>
             <span class="artist-name">{{album.artist}}</span>
           </li>

@@ -71,7 +71,8 @@ body {
     padding: .3em;
 }
 
-.library {
+.library li{
+    cursor: pointer;
 }
 
 .library .album .queue.remove {
