@@ -1,6 +1,6 @@
 [{
     "title": "Instant Mixed",
-    "artist": "Various Artists",
+    "artist": "V.A",
     "tracks": [{
         "title": "I Need Your Love - Calvin Harris",
         "url": "http://m1.file.xiami.com/979/24979/662124155/1771712110_4219308_l.mp3"
@@ -32,7 +32,7 @@
 },
 {
     "title": "Rainy Day",
-    "artist": "Various Artists",
+    "artist": "V.A",
     "tracks": [
     {
         "title": "Whispers of Rain - Dan Gibson",
@@ -65,7 +65,7 @@
 },
 {
     "title": "Freedom!",
-    "artist": "Various Artists",
+    "artist": "V.A",
     "tracks": [
     {
         "title": "Freedom - Anthony Hamilton&Elayna Boynton",
@@ -98,7 +98,7 @@
 },
 {
     "title": "Beethoven's Secrets",
-    "artist": "Various Artists",
+    "artist": "V.A",
     "tracks": [
     {
         "title": "You - Approaching Nirvana",
@@ -127,6 +127,39 @@
     {
         "title": "Moonlight Sonata - E.S. Posthumus",
         "url": "http://m1.file.xiami.com/950/23950/367720/1769362606_1068890_l.mp3"
+    }]
+},
+{
+    "title": "Time Machine",
+    "artist": "V.A",
+    "tracks": [
+    {
+        "title": "You'll See - Tizzy Bac",
+        "url": "http://m1.file.xiami.com/58/3058/15429/189170_2256242_l.mp3"
+    },
+    {
+        "title": "Unbelievable - Craig David",
+        "url": "http://m1.file.xiami.com/910/22910/103047/2061266_74515_l.mp3"
+    },
+    {
+        "title": "Abbie Martin - Joshua James",
+        "url": "http://m1.file.xiami.com/1/0/59000/321846/3581139_666175_l.mp3"
+    },
+    {
+        "title": "You're Not Alone - Shayne Ward",
+        "url": "http://m1.file.xiami.com/463/23463/168735/2083321_74178_l.mp3"
+    },
+    {
+        "title": "Hero - Enrique Iglesias",
+        "url": "http://m1.file.xiami.com/1/686/15686/135693/1961127_180952_l.mp3"
+    },
+    {
+        "title": "No Surprises - Radiohead",
+        "url": "http://m1.file.xiami.com/454/10454/56348/1079676_52286_l.mp3"
+    },
+    {
+        "title": "Stop Crying Your Heart Out - Oasis",
+        "url": "http://m1.file.xiami.com/401/10401/55727/1242912_96945_l.mp3"
     }]
 }
 ]
