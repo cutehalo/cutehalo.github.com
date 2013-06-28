@@ -32,7 +32,7 @@ body {
     display: inline-block;
     position: relative;
     margin: 0;
-    padding: 1em 2em;
+    padding: 10px 25px;
     float: left;
 }
 .track {
