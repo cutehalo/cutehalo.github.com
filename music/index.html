@@ -46,6 +46,14 @@
     </div>
   </body>
 <script>
+function hashClick(hash){
+    window.location.href = location.href;
+    var num = parseInt(hash.split("album")[1])-1;
+    setTimeout(function(){document.querySelector(".library").querySelectorAll(".album")[num].click();},100);
+}
+if (!!location.hash) {
+    hashClick(location.hash);
+  };
 window.onload=(function () {
   var hour = new Date().getHours();
   var obj = document.getElementsByTagName("body")[0];
@@ -67,6 +75,7 @@ window.onload=(function () {
   else{
     obj.setAttribute("style","background-image:url(http://interfacelift.com/wallpaper/D47cd523/02503_alpinenightsky_1920x1080.jpg);")
   }
-})();
+}
+)();
 </script>
 </html>
