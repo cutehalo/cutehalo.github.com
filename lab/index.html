@@ -5,6 +5,6 @@
 	<title>Lab</title>
 </head>
 <body>
-	<p>拖拽链接到收藏 &gt;&gt; <a href='javascript:function strToJson(e){var t=(new Function("return "+e))();return t}var arr=[];$("div.playlist").each(function(){var e=$(this).next().next().next().next().next().text(),t=/song_records = (.*);/g,n=e.match(t),r=n[0].replace("song_records = ",""),r=strToJson(r);for(var i=0;i<r.length;i++)arr.push(r[i].rawUrl)}),$("tr[class^=tr]").each(function(e){if(arr.length==$("tr[class^=tr]").length){var t='<a target="_blank" href="'+arr[e]+'">右键保存</a>';$(this).find("td.title").append(t)}});'>豆瓣小站添加下载</a></p>
+	<p>拖拽链接到收藏 &gt;&gt; <a href="javascript:function strToJson(e){var t=(new Function('return '+e))();return t}var arr=[];$('div.playlist').each(function(){var e=$(this).next().next().next().next().next().text(),t=/song_records = (.*);/g,n=e.match(t),r=n[0].replace('song_records = ','),r=strToJson(r);for(var i=0;i<r.length;i++)arr.push(r[i].rawUrl)}),$('tr[class^=tr]').each(function(e){if(arr.length==$('tr[class^=tr]').length){var t='<a href="'+arr[e]+'">右键保存</a>';$(this).find('td.title').append(t)}});">豆瓣小站添加下载</a></p>
 </body>
 </html>
