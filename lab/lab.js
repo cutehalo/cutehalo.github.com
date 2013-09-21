@@ -16,7 +16,7 @@ function strToJson(str){
 };
 $("tr[class^=tr]").each(function(i){
 	if (arr.length==$("tr[class^=tr]").length) {
-		var html = '<a target="_blank" href="'+arr[i]+'">右键保存</a>';
+		var html = '<a href="'+arr[i]+'">Save</a>';
 		$(this).find("td.title").append(html);
 	};
 })
