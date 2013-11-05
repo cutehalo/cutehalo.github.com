@@ -85,5 +85,15 @@ $(function(){
   }
   setTimeout(setWidth, 1000);
 })
+var step=0;
+function MoveTitle()
+{
+  step++
+  if (step==3) {step=1}
+  if (step==1) {document.title=$(".tracks li.current").text()||'InstanTunes'}
+  if (step==2) {document.title='give music a chance.'}
+  setTimeout("MoveTitle()",2000);
+}
+MoveTitle();
 </script>
 </html>
