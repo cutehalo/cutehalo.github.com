@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Hello World!
+title: Hell0!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-###Music here:
+###Extra here:
 [InstanTunes](http://www.cutehalo.com/music/)
+
 [LABS](http://www.cutehalo.com/lab/)
 
 
