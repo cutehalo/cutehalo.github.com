@@ -1,15 +1,9 @@
 ---
 layout: page
 title: Hell0!
-tagline: Supporting tagline
+tagline: With pleasuress
 ---
 {% include JB/setup %}
-
-###Extra here:
-[InstanTunes](http://www.cutehalo.com/music/)
-
-[LABS](http://www.cutehalo.com/lab/)
-
 
 <ul class="posts">
   {% for post in site.posts %}
@@ -17,3 +11,7 @@ tagline: Supporting tagline
   {% endfor %}
 </ul>
 
+###Extra here:
+[InstanTunes](http://www.cutehalo.com/music/)
+
+[LABS](http://www.cutehalo.com/lab/)
