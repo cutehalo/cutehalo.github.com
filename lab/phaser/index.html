@@ -86,7 +86,7 @@ function create() {
     }
 
     //  The score
-    scoreText = game.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+    scoreText = game.add.text(16, 16, '得分: 0', { fontSize: '32px', fill: '#000' });
 
     //  Our controls.
     cursors = game.input.keyboard.createCursorKeys();
@@ -142,7 +142,7 @@ function collectStar (player, star) {
 
     //  Add and update the score
     score += 10;
-    scoreText.content = 'Score: ' + score;
+    scoreText.content = '得分: ' + score;
 
 }
 

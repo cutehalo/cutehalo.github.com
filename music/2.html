@@ -2,22 +2,16 @@
 <html lang="en" ng-app="tunesApp">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
     <title>InstanTunes</title>
-    <link rel="stylesheet" href="style/fancypants.css" media="screen, projection">
     <link rel="stylesheet" href="style/screen.css" media="screen, projection">
+    <link rel="stylesheet" href="style/fancypants.css" media="screen, projection">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="js/vendor/angular.js"></script>
     <script src="js/Tunes.js"></script>
-    <style>  
-
-    </style>
   </head>
 
   <body ng-controller="TunesCtrl">
-    <div id="st-trigger-effects" class="column">
-      <button></button>
-    </div>
     <div id="container">
       <div class="playlist">
         <nav>
@@ -49,16 +43,6 @@
           </li>
         </ul>
       </section>
-    </div>
-    <div class="st-effect-1">
-      <nav class="st-menu st-effect-1" id="menu-1">
-        <ul>
-          <li ng-repeat="album in albums" ng-click="player.playlist.add(album)">
-            <a class="icon icon-data" href="#"><span class="album-title">{{album.title}}</span>
-              <span class="artist-name">{{album.artist}}</span></a>
-          </li>
-        </ul>
-      </nav>
     </div>
   </body>
 <script>
@@ -100,8 +84,6 @@ $(function(){
     $(".library .albums").width(w);
   }
   setTimeout(setWidth, 1000);
-  $("#st-trigger-effects button").click(function(){$("div.st-effect-1").toggleClass("st-menu-open")})
-  $("#container").click(function(){$(".st-menu-open").removeClass("st-menu-open")})
 })
 var step=0;
 function MoveTitle()

@@ -1,4 +1,36 @@
 [{
+    "title": "Latest!",
+    "artist": "",
+    "tracks": [{
+        "title": "Stay Alive - José González",
+        "url": "http://m1.file.xiami.com/256/23256/1286574424/1772395649_11231965_l.mp3"
+    },
+    {
+        "title": "Space Oddity (Mitty Mix) - David Bowie&Kristen Wiig",
+        "url": "http://m1.file.xiami.com/256/23256/1286574424/1772395656_11231972_l.mp3"
+    },
+    {
+        "title": "Ignorance (Acoustic Version) - Paramore",
+        "url": "http://m1.file.xiami.com/436/28436/400799/1769751045_1615249_l.mp3"
+    },
+    {
+        "title": "Clouds - The Rumble Strips",
+        "url": "http://m1.file.xiami.com/1/748/25748/177919/2190266_131820_l.mp3"
+    },
+    {
+        "title": "Farewell and Goodnight - Birdy",
+        "url": "http://m1.file.xiami.com/845/49845/475615/1770597628_2792764_l.mp3"
+    },
+    {
+        "title": "Join the Song - Vicky Beeching",
+        "url": "http://m1.file.xiami.com/1/612/54612/300214/3323137_257008_l.mp3"
+    },
+    {
+        "title": "Wait For You - Elliott Yamin",
+        "url": "http://m1.file.xiami.com/1/604/23604/169329/2090938_630538_l.mp3"
+    }]
+},
+{
     "title": "Instant Mixed",
     "artist": "V.A",
     "tracks": [{
