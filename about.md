@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: ♥
 disqus: false
 ---
 
@@ -10,5 +10,3 @@ Something about having a good day.
 
 Tweet at [@cutehal0](http://twitter.com/cutehal0)
 Weibo at [@cutehalo](http://weibo.com/cutehalo)
-
-♥
