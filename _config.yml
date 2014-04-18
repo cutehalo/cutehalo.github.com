@@ -9,8 +9,6 @@ google_analytics_id: # set tracking, UA-XXXX-Y.
 links:
   - name:         About
     url:          /about
-  - name:         Feed
-    url:          /feed.xml
   - name:         Blog
     url:          http://www.cutehalo.com
     external:     true
