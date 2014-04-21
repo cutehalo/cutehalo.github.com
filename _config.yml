@@ -18,6 +18,12 @@ links:
   - name:         GitHub
     url:          http://github.com/cutehalo
     external:     true
+  - name:          ♫ Music
+    url:          /music/
+    external:     true
+  - name:          ✡ Labs
+    url:          /labs/
+    external:     true
 
 pygments:         true
 permalink:        pretty
