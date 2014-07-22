@@ -11,18 +11,18 @@ links:
     url:          /about
   - name:         Blog
     url:          http://www.cutehalo.com
-    external:     true
+    external:     false
   - name:         Email
     url:          mailto:cutehalo@gmail.com
-    external:     true
+    external:     false
   - name:         GitHub
     url:          http://github.com/cutehalo
     external:     true
   - name:          ♫ Music
     url:          /music/
     external:     true
-  - name:          ✡ Labs
-    url:          /labs/
+  - name:          ✡ Lab
+    url:          /lab/
     external:     true
 
 pygments:         true
