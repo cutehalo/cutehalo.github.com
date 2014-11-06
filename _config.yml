@@ -1,4 +1,4 @@
-title:            Tune
+title:            Tune - Give music a chance.
 description:      Give music a chance. #
 url:              # Site url.
 baseurl:          # Base url. ( if use subdirectory-like URL )
@@ -21,7 +21,7 @@ links:
   - name:          ♫ Music
     url:          /music/
     external:     true
-  - name:          ✡ Lab
+  - name:         Lab
     url:          /lab/
     external:     true
 
