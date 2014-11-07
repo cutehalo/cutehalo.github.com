@@ -16,6 +16,7 @@ body {
     background-image: url("../images/shadow.png"), url("../images/pixels.png");
     background-position: 0 0, 0 50%;
     background-repeat: repeat-x, repeat;
+    background-attachment: fixed;
 }
 #go-back-home { margin: 40px 0 0 }
 #go-back-home:hover { background-image: none }
