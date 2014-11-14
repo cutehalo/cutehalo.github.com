@@ -244,7 +244,7 @@ section.post h1 .date {
     color: #d0d0d0;
     font-size: 10px;
 }
-section.post img { border-radius: 3px }
+section.post img { border-radius: 3px ;text-align: center;}
 section.post em strong {
      background-color: #ffffee;
      padding: 0 2px;
