@@ -1,6 +1,6 @@
 ---
 layout: post
-title:卡卡颂规则介绍
+title: 卡卡颂规则介绍
 ---
 
 ![卡卡颂规则封面](http://ww1.sinaimg.cn/large/536efc01jw1emalgxcqc5j209p0dw0us.jpg)
