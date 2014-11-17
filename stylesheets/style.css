@@ -76,6 +76,7 @@ footer * { color: #797979 }
     border-bottom: 1px solid #efefef;
     padding: 30px 40px 24px;
     text-align: center;
+    list-style: none;
 }
 #container .block:first-child,
 #container .block + .block { border-top: 0 }
@@ -89,6 +90,13 @@ footer * { color: #797979 }
     padding: 2px 2px;
     margin-right: 12px;
     margin-bottom: 6px;
+}
+#container .block li{
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    padding: 2px 2px;
+    margin-right: 12px;
 }
 #container .block a.main:last-of-type { margin-right: 0 }
 #container .block .button {
