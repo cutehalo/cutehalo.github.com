@@ -1,6 +1,6 @@
 title:            Tune - Give music a chance.
 description:      Give music a chance. #
-url:              # Site url.
+url:              http://www.cutehalo.com
 baseurl:          # Base url. ( if use subdirectory-like URL )
 signoff:          Tune # Your name.
 disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
