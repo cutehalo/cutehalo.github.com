@@ -438,6 +438,7 @@
         window.locationCallBack = (_res) => {
           const res = JSON.parse(_res);
           console.info("获取地理位置信息", res);
+          res.cityName = "上海市";
           if (res.state == 0) {
             if (res.cityName == "上海市") {
               toLink(targetUrl);
