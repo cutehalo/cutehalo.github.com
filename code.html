@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>美好星期三</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,viewport-fit=cover"
+    />
+    <!-- 新版本定位文件 -->
+    <!-- <script
+      type="text/javascript"
+      src="https://s.dmsp.ccb.com/dmapi/p2s1/v1/CCBLogin.umd.min.js"
+    ></script> -->
+    <!-- 老版本定位文件 -->
+    <script
+      type="text/javascript"
+      src="https://api.map.baidu.com/api?v=2.0&ak=fSSpt4DUGqWsLXyLwTa7rc6LBedVWQrs"
+    ></script>
+    <script>
+      !(function (e, i) {
+        var t = e.documentElement,
+          n = navigator.userAgent.match(/iphone|ipod|ipad/gi),
+          a = n ? Math.min(i.devicePixelRatio, 3) : 1,
+          m = "orientationchange" in window ? "orientationchange" : "resize";
+        t.dataset.dpr = a;
+        for (
+          var d, l, c = !1, o = e.getElementsByTagName("meta"), r = 0;
+          r < o.length;
+          r++
+        ) {
+          (l = o[r]), "viewport" == l.name && ((c = !0), (d = l));
+        }
+        if (c) {
+          d.content =
+            "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";
+        } else {
+          var o = e.createElement("meta");
+          (o.name = "viewport"),
+            (o.content =
+              "width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no"),
+            t.firstElementChild.appendChild(o);
+        }
+        var s = function () {
+          var e = t.clientWidth;
+          var dw = window["designWidth"] || 750;
+          e / a > dw && (e = dw * a),
+            (window.remScale = e / dw),
+            (t.style.fontSize = 100 * (e / dw) + "px");
+        };
+        s(), e.addEventListener && i.addEventListener(m, s, !1);
+      })(document, window);
+    </script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /*禁止长按链接与图片弹出菜单*/
+        -webkit-touch-callout: none;
+        -ms-touch-callout: none;
+        -moz-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-family: -apple-system, Helvetica, sans-serif;
+      }
+
+      body {
+        width: 100%;
+        height: 100%;
+        background: #fde6d3;
+      }
+
+      .container {
+        width: 7.5rem;
+        max-width: 7.5rem;
+        overflow: hidden;
+        position: relative;
+        background: #fde6d3;
+
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      }
+
+      .bgBox {
+        width: 100%;
+        /* height: 197.92rem; */
+      }
+
+      .bgBox img {
+        width: 100%;
+      }
+      .bg,.bg2,.bg3,.bg4 {
+        pointer-events: none;
+      }
+
+      .topBox {
+        position: absolute;
+        top: 8.2rem;
+        left: 0.33rem;
+        width: 6.84rem;
+      }
+      .topBox .item2 {
+        top: 2rem;
+      }
+
+      .topBox .item3 {
+        width: 3rem;
+        height: 1rem;
+        top: 4.47rem;
+        left: 2.4rem;
+      }
+      .centerBox {
+        width: 100%;
+        margin-top: 0.18rem;
+        position: relative;
+      }
+      .centerBox .item1{
+        margin-left: 0.33rem;
+        top: 0.7rem;
+      }
+      .centerBox .item2 {
+        top: 2.7rem;
+        margin-left: 0.33rem;
+      }
+
+      .centerBox .item3 {
+        width: 3rem;
+        height: 1rem;
+        top: 5.3rem;
+        left: 2.8rem;
+      }
+      .bottomBox {
+        margin-top: 0;
+      }
+      .bottomBox .item1{
+        top: 0.8rem;
+      }
+      .bottomBox .item2 {
+        top: 2.8rem;
+      }
+
+      .voucher {
+        width: 6.84rem;
+        height: 1.85rem;
+        position: absolute;
+        pointer-events: auto;
+        /* background-color: rgba(0, 0, 0, 0.7); */
+      }
+
+
+      .clickText {
+        position: absolute;
+        width: 2.44rem !important;
+        height: 0.78rem;
+        margin: -0.5rem 0 0 2.55rem;
+        transform: scale(0.7);
+        z-index: 1;
+      }
+      .clickText2 {
+        margin-top: -0.46rem;
+      }
+
+      .clickText3 {
+        margin-top: -1.2rem;
+      }
+      #bg2Box,#bg3Box,#bg4Box {
+        display: none;
+      }
+
+      .ruleBtn {
+        width: 0.89rem;
+        height: 2.53rem;
+        position: absolute;
+        right: 0;
+        top: 1.7rem;
+      }
+
+      .mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+      }
+
+      .rulePop {
+        position: fixed;
+        width: 90%;
+        max-height: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 0.08rem;
+        display: none;
+        z-index: 2;
+      }
+
+      .rulePopTitle {
+        height: 1rem;
+        background-color: #f1f1f1;
+        color: #242424;
+        font-size: 0.4rem;
+        padding: 0.26rem;
+        border-bottom: 0.02rem solid #a5a3a3;
+        border-radius: 0.08rem 0.08rem 0 0;
+        box-sizing: border-box;
+      }
+
+      .rulePopClose {
+        width: 0.28rem;
+        height: 0.28rem;
+        right: 0.34rem;
+        top: 0.34rem;
+        position: absolute;
+      }
+
+      .rulePopContent {
+        padding: 0.4rem;
+        box-sizing: border-box;
+        color: #242424;
+        font-size: 0.36rem;
+        width: 100%;
+        height: 8rem;
+        word-break: break-all;
+        overflow: hidden;
+      }
+
+      .ruleText {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      .sharebtn {
+        width: 1.16rem;
+        height: 0.51rem;
+        position: fixed;
+        top: 5.9rem;
+        right: 0;
+        pointer-events: auto;
+      }
+
+      #wxTip {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      #typeImage {
+        position: absolute;
+        top: 5vw;
+        right: 5vw;
+        width: 71vw;
+      }
+    </style>
+  </head>
+
+  <body>
+
+        <div onclick="jumpUrl(5)" class="voucher item2">点这里领蛋糕</div>
+
+        <div onclick="jumpUrl(2)" class="voucher item2" style="margin-top: 200px;">点这里领花</div>
+
+
+
+  </body>
+
+  <script>
+    // 环境判断
+    var ua = navigator.userAgent;
+    var isAndroid = ua.indexOf("Android") > -1 || ua.indexOf("Adr") > -1;
+    var isiOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    var isWeChat = /MicroMessenger/.test(ua);
+
+    // 跳转链接
+    var linkList = {
+      // 花加25-50
+      1: "https://res.yunbusiness.ccb.com/gbchannel/e_report/CCBLIFE/#/couponList",
+      // 花加61-60
+      2: "https://res.yunbusiness.ccb.com/gbchannel/e_report/CCBLIFE/#/couponDetail/251428?couponType=msps&isFromMessage=1&MS_FLAG=1&START_TIME=0000&SMART_MODE=1",
+      // 花加
+      3: "https://res.yunbusiness.ccb.com/gbchannel/e_report/CCBLIFE/#/interLayer/YS44000091000322?LOGIN_REQUIRED=2",
+      // 甜品30-80
+      4: "https://res.yunbusiness.ccb.com/gbchannel/e_report/CCBLIFE/#/couponList",
+      // 甜品90-80
+      5: "https://res.yunbusiness.ccb.com/gbchannel/e_report/CCBLIFE/#/couponDetail/251649?couponType=msps&isFromMessage=1&MS_FLAG=1&START_TIME=0000&SMART_MODE=1",
+      // 甜品
+      6: "https://res.yunbusiness.ccb.com/gbchannel/e_report/CCBLIFE/#/interLayer/YS44000007000613?LOGIN_REQUIRED=2",
+      // 洗衣
+      7: "https://res.yunbusiness.ccb.com/gbchannel/e_report/CCBLIFE/#/couponList",
+      // 洗衣
+      8: "https://res.yunbusiness.ccb.com/gbchannel/e_report/CCBLIFE/#/couponDetail/251647?couponType=msps&isFromMessage=1&MS_FLAG=1&START_TIME=0000&SMART_MODE=1",
+    };
+
+    // 引导遮罩
+    var tipDiv = document.createElement("div");
+    var img = isiOS ? "ios" : "android";
+    tipDiv.innerHTML =
+      '<div id="wxTip">\n' +
+      '<img id="typeImage" src="./' +
+      img +
+      '.png">\n' +
+      "</div>";
+
+    // 端内展示分享按钮 端外不展示
+    if (!isInClient() || !window.CCBBridge) {
+      document.getElementById("sharebtn").style.display = "none";
+    } else {
+      document.getElementById("sharebtn").style.display = "";
+    }
+
+    function lookNext(next) {
+      var name = "bg"+next+"Box";
+      document.getElementById(name).style.display = "block";
+    }
+
+    /**
+     * 判断是否是端内
+     */
+    function isInClient() {
+      //return getClientVersion() ? true : false;
+      var info = navigator.userAgent;
+      return info.indexOf("CloudMercWebView") > -1 ||
+        info.indexOf("CCBSDK") > -1
+        ? true
+        : false;
+    }
+    console.log("端内：", isInClient());
+    console.log("ccbbriage", window.CCBBridge == true);
+
+    /**
+     * 分享
+     */
+    function goShare() {
+      console.log("网页地址", window.location.href);
+      var requestObj = {
+        action: "share",
+        params: {
+          // share_id:'',
+          title: "美好星期三",
+          text: "优惠来袭，省钱不容错过！",
+          url: window.location.href,
+          image:
+            "https://yun.duiba.com.cn/aurora/assets/af77c5352fe74771e495623b86dd4ed683a4ff59.png",
+          type: "",
+        },
+      };
+      window.CCBBridge &&
+        window.CCBBridge.requestNative(JSON.stringify(requestObj), "cbShare");
+    }
+
+    /**
+     * 点击卡券 区分端内外进行跳转
+     */
+    function jumpUrl(index) {
+      if (isWeChat) {
+        document.body.appendChild(tipDiv);
+        return;
+      }
+      var targetUrl = linkList[index];
+      console.log("targetUrl", targetUrl);
+      // 检查是否不在建行生活App内
+      if (!isInClient() || !window.CCBBridge) {
+        // 端外
+        if (isiOS) {
+          window.location.href =
+            "cloudapp://utils?url=" + encodeURIComponent(location.href);
+        } else {
+          window.location.href =
+            "cloudapp://utils?ccbParam=" + encodeURIComponent(location.href);
+        }
+        setTimeout(function () {
+          // 一般这个时间段内还停留在当前页面就肯定是没安装建行生活App的人了,直接引导下载吧.
+          showDownLoadApp();
+        }, 300);
+      } else {
+        // 端内
+        isShanghai(targetUrl); //老版本
+        // getAPPLocation(targetUrl);
+      }
+    }
+    /**
+     * 限制上海地区参与
+     */
+    function isShanghai(targetUrl) {
+      // 判断是否上海
+      var geolocation = new BMap.Geolocation();
+      geolocation.getCurrentPosition(function (r) {
+        if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+          console.log("您的坐标：" + r.point.lng + "," + r.point.lat);
+          var map = new BMap.Map("allmap");
+          var point = new BMap.Point(r.point.lng, r.point.lat);
+          var geoc = new BMap.Geocoder();
+          geoc.getLocation(point, function (rs) {
+            var addComp = rs.addressComponents;
+            console.log(addComp.city);
+            addComp.city ="上海市";
+            //条件满足
+            if (addComp.city === "上海市") {
+              // 端内
+              toLink(targetUrl);
+            } else {
+              alert("仅限上海市参与");
+            }
+          });
+        }
+      });
+    }
+
+    // 获取app用户地理位置
+    function getAPPLocation(targetUrl) {
+      console.info("window.CCBBridge", window.CCBBridge);
+      if (!window.locationCallBack) {
+        window.locationCallBack = (_res) => {
+          const res = JSON.parse(_res);
+          console.info("获取地理位置信息", res);
+          if (res.state == 0) {
+            if (res.cityName == "上海市") {
+              toLink(targetUrl);
+            } else {
+              alert("仅限上海市参与");
+            }
+          } else if (res.state == 1) {
+            alert(res.msg || "获取用户位置信息失败~");
+          } else if (res.state == 2) {
+            alert("功能未开通");
+          }
+        };
+      }
+
+      window.CCBBridge &&
+        window.CCBBridge.requestNative(
+          {
+            action: "position",
+            params: {
+              needLocate: true,
+              needCityLocation: false,
+              cityName: "",
+            },
+          },
+          "locationCallBack"
+        );
+    }
+    /**
+     * 引导下载app
+     */
+    function showDownLoadApp() {
+      // 引导没有安装建行生活的人去下载安装建行生活
+      // location.href = 'https://qm.hpay.inrice.com/ddc-life-landing/wx/'
+      location.href =
+        "https://yunbusiness.ccb.com/gbchannel/e_report/outercoupon/#/CustomerActivity/20210827090000000351/YSM202108172049725";
+    }
+
+    /**
+     * 端内跳转
+     */
+    function toLink(url) {
+      console.log("跳转链接", url);
+      window.CCBBridge &&
+        window.CCBBridge.requestNative(
+          JSON.stringify({
+            action: "forward",
+            params: {
+              type: "1",
+              isNewView: "1",
+              toPage: url, // 跳转链接
+              isShowTitle: "0",
+              isShowHeader: "0",
+            },
+          }),
+          "forwardCB"
+        );
+    }
+  </script>
+
+  <script>
+    // ==== 规则相关 =====
+    var popMaskEle = document.getElementById("popMask");
+    var rulePopEle = document.getElementById("rulePop");
+    // 打开规则弹窗
+    function openPop() {
+      popMaskEle.style.display = "block";
+      rulePopEle.style.display = "block";
+    }
+    // 关闭规则弹窗
+    function closePop() {
+      popMaskEle.style.display = "none";
+      rulePopEle.style.display = "none";
+    }
+  </script>
+</html>
